@@ -1,0 +1,219 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arial', sans-serif;
+    background-image: url(../img/Bottle_Burglars_001.png); /* Светлый фон, напоминающий песок */
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  header {
+    background-color: rgba(80, 248, 241, 1); /* Ярко-желтый */
+    position: relative; /* Для позиционирования вложенных элементов */
+    padding: 45px 0;
+    height: 120px; /* Установим фиксированную высоту шапки */
+  }
+  
+  /* Контейнер для логотипа */
+  header .logo {
+    position: absolute; /* Логотип будет позиционироваться относительно родителя (header) */
+    top: 50%; /* Центрируем логотип по вертикали */
+    left: 50px; /* Логотип будет в левом углу */
+    transform: translateY(-50%); /* Корректировка вертикального выравнивания */
+  }
+  
+  /* Логотип */
+  header .logo img {
+    width: 80%; /* Растягиваем логотип по ширине шапки */
+    border-radius: 30%;
+  }
+
+  header .logo h1 {
+    font-size: 36px;
+    color: #0077b6; /* Голубой */
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  header nav {
+    text-align: right;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: inline-flex;
+    gap: 60px;
+  }
+  
+  header nav ul li a {
+    color: rgba(77, 4, 211, 0.6);
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s;
+  }
+  
+  header nav ul li a:hover {
+    color: rgba(77, 4, 211, 1);
+  }
+  
+  /* Основной контент */
+  main {
+    padding: 60px 0;
+    background-color: rgba(80, 248, 241, 1);
+    background-image: url(../img/Bottle_Burglars_001.png); /* Светлый фон, напоминающий песок */
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  h2 {
+    font-size: 32px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+  }
+
+  /* Основной контейнер для формы с вопросами */
+.questions-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Стиль для вопроса */
+.question {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+  background: rgb(77, 4, 211, 0.5);
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.question p {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.question label {
+  font-size: 16px;
+  color: #fff;
+}
+
+/* Стили для чекбоксов */
+input[type="radio"] {
+  appearance: none; /* Убираем стандартный стиль */
+  -webkit-appearance: none; /* Для Safari */
+  -moz-appearance: none; /* Для Firefox */
+  width: 20px; /* Размер чекбокса */
+  height: 20px;
+  border: 2px solid #000; /* Черная рамка */
+  border-radius: 4px; /* Квадратные углы */
+  background-color: #fff; /* Белый фон */
+  cursor: pointer;
+  position: relative;
+}
+
+input[type="radio"]:checked {
+  background-color: #000; /* Черный фон при выделении */
+  border-color: #000; /* Черная рамка при выделении */
+}
+
+input[type="radio"]:checked::before {
+  content: ''; /* Создаем псевдо-элемент для галочки */
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: #fff; /* Белая галочка */
+  border-radius: 2px; /* Рамка галочки */
+}
+
+/* Кнопка */
+button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 200px;
+  margin: 20px 0;
+}
+
+button:hover {
+  background-color: rgba(77, 4, 211, 1);
+}
+
+#result{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: #fff;
+}
+
+  
+  /* Подвал */
+  footer {
+    background-color: rgba(80, 248, 241, 1); /* Голубой цвет */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  footer a {
+    color: #ffb600;
+    font-weight: bold;
+  }
+  
+  footer a:hover {
+    color: #fff;
+  }
+
+  .social-links a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .social-links img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }

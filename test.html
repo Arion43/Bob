@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тест по Губке Бобу</title>
+  <link rel="stylesheet" href="css/test.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="main.html">
+          <img src="img/logo.png" alt="Логотип">
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="main.html">Главная</a></li>
+          <li><a href="dict.html">Словарь</a></li>
+          <li><a href="gallery.html">Галерея</a></li>
+          <li><a href="test.html">Тест</a></li>
+          <li><a href="profile.html">Профиль</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="test-section">
+        <form id="testForm">
+          <div class="questions-container">
+                    <h2>Тест по мультфильму "Губка Боб"</h2>
+            <!-- Вопросы -->
+            <div class="question">
+              <p>1. Как зовут улитку, питомца Губки Боба?</p>
+              <input type="text" name="question1" placeholder="Введите ответ">
+              <div class="feedback"></div>
+            </div>
+    
+            <div class="question">
+              <p>2. Кто является владельцем ресторана "Красти Краб"?</p>
+              <label><input type="radio" name="question2" value="Сквидвард"> Сквидвард</label><br>
+              <label><input type="radio" name="question2" value="Мистер Крабс"> Мистер Крабс</label><br>
+              <label><input type="radio" name="question2" value="Планктон"> Планктон</label>
+              <div class="feedback"></div>
+            </div>
+    
+            <div class="question">
+              <p>3. Как называется город, в котором живет Губка Боб?</p>
+              <input type="text" name="question3" placeholder="Введите ответ">
+              <div class="feedback"></div>
+            </div>
+    
+            <div class="question">
+              <p>4. Кто лучший друг Губки Боба?</p>
+              <label><input type="radio" name="question4" value="Патрик"> Патрик</label><br>
+              <label><input type="radio" name="question4" value="Сэнди"> Сэнди</label><br>
+              <label><input type="radio" name="question4" value="Сквидвард"> Сквидвард</label>
+              <div class="feedback"></div>
+            </div>
+    
+            <div class="question">
+              <p>5. Сколько ног у Губки Боба?</p>
+              <input type="number" name="question5" placeholder="Введите число">
+              <div class="feedback"></div>
+            </div>
+    
+            <div class="question">
+              <p>6. Сколько долларов стоит крабсбургер?</p>
+              <input type="number" name="question6" placeholder="Введите число">
+              <div class="feedback"></div>
+            </div>
+            <button type="submit">Проверить ответы</button>
+            <div id="result"></div>
+          </div>
+        </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Контакты: <a href="mailto:spongebob@patrick.com">spongebob@patrick.com</a></p>
+  
+      <p>+79005552525</p>
+      <div class="social-links">
+        <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+          <img src="img/facebook.png" alt="Facebook">
+        </a>
+        <a href="https://www.youtube.com" target="_blank" aria-label="YouTube">
+          <img src="img/youtube.png" alt="YouTube">
+        </a>
+      </div>
+    </div>
+    <p>&copy; 2024 Титов. Все права защищены.</p>
+  </footer>
+
+  <script src="js/test.js"></script>
+</body>
+</html>

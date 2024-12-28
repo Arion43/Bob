@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Губка Боб</title>
+  <link rel="stylesheet" href="css/gallery.css"> <!-- Путь к вашему CSS -->
+</head>
+<body>
+  <!-- Шапка сайта -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="main.html">
+          <img src="img/logo.png" alt="Логотип">
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="main.html">Главная</a></li>
+          <li><a href="dict.html">Словарь</a></li>
+          <li><a href="gallery.html">Галерея</a></li>
+          <li><a href="test.html">Тест</a></li>
+          <li><a href="profile.html">Профиль</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Основной контент главной страницы -->
+  <main>
+    <section class="gallery">
+        <div id="slider-container">
+            <div id="top">
+                <img src="img/steek1.png" alt="" class="arrow arrow-left">
+                <div id="frame">
+                    <div id="slider">
+                        <img src="img/pic1.jpg" alt="" class="slider-image">
+                        <img src="img/pic2.jpg" alt="" class="slider-image">
+                        <img src="img/pic3.jpg" alt="" class="slider-image">
+                        <img src="img/pic4.jpg" alt="" class="slider-image">
+                        <img src="img/pic5.jpg" alt="" class="slider-image">
+                    </div>
+                </div>
+                <img src="img/steek1.png" alt="" class="arrow arrow-right">
+            </div>
+            <div id="bottom">1 слайд из 5 — Подпись к картинке 1</div>
+        </div>
+    </section>
+  </main>
+
+  <!-- Подвал -->
+  <footer>
+    <div class="container">
+      <p>Контакты: <a href="mailto:spongebob@patrick.com">spongebob@patrick.com</a></p>
+
+      <p>+79005552525</p>
+      <div class="social-links">
+        <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+          <img src="img/facebook.png" alt="Facebook">
+        </a>
+        <a href="https://www.youtube.com" target="_blank" aria-label="YouTube">
+          <img src="img/youtube.png" alt="YouTube">
+        </a>
+      </div>
+    </div>
+    <p>&copy; 2024 Титов. Все права защищены.</p>
+  </footer>
+
+  <script src="js/gallery.js"></script> <!-- Скрипт для обработки формы -->
+</body>
+</html>

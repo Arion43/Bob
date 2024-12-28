@@ -1,0 +1,157 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arial', sans-serif;
+    background-image: url(../img/Bottle_Burglars_001.png); /* Светлый фон, напоминающий песок */
+    background-position: center;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+ /* Шапка сайта */
+header {
+    background-color: rgba(80, 248, 241, 1); /* Ярко-желтый */
+    position: relative; /* Для позиционирования вложенных элементов */
+    padding: 45px 0;
+    height: 120px; /* Установим фиксированную высоту шапки */
+  }
+  
+  /* Контейнер для логотипа */
+  header .logo {
+    position: absolute; /* Логотип будет позиционироваться относительно родителя (header) */
+    top: 50%; /* Центрируем логотип по вертикали */
+    left: 50px; /* Логотип будет в левом углу */
+    transform: translateY(-50%); /* Корректировка вертикального выравнивания */
+  }
+  
+  /* Логотип */
+  header .logo img {
+    width: 80%; /* Растягиваем логотип по ширине шапки */
+    border-radius: 30%;
+  }
+
+  header .logo h1 {
+    font-size: 36px;
+    color: #0077b6; /* Голубой */
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  header nav {
+    text-align: right;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: inline-flex;
+    gap: 60px;
+  }
+  
+  header nav ul li a {
+    color: rgba(77, 4, 211, 0.6);
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s;
+  }
+  
+  header nav ul li a:hover {
+    color: rgba(77, 4, 211, 1);
+  }
+  
+  /* Основной контент */
+  main {
+    padding: 60px 0;
+    height: 100vh;
+  }
+  
+  .intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+  }
+  
+  .intro .content {
+    max-width: 600px;
+  }
+  
+  .intro h2 {
+    color: rgba(77, 4, 211, 0.5);
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .intro p {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .intro .image img {
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Подвал */
+  footer {
+    background-color: rgba(80, 248, 241, 1); /* Голубой цвет */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  footer a {
+    color: #ffb600;
+    font-weight: bold;
+  }
+  
+  footer a:hover {
+    color: #fff;
+  }
+
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0 10px;
+  width: 30px;
+  height: 30px;
+}
+
+.social-links img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.social-links a:hover img {
+  transform: scale(1.1); /* Увеличение при наведении */
+}

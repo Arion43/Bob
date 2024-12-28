@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Авторизация | Губка Боб</title>
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+  <div class="auth-container">
+    <h2>Авторизация</h2>
+    <section class="auth-form">
+      <form id="loginForm" novalidate required>
+        <label for="username">Логин:</label>
+        <input type="text" id="username" name="username" minlength="4" maxlength="10" required>
+        <span id="usernameError" class="error"></span>
+  
+        <label for="gender">Пол:</label>
+        <select id="gender" name="gender" required>
+          <option value="male">Мужской</option>
+          <option value="female">Женский</option>
+        </select>
+        <span id="genderError" class="error"></span>
+  
+        <label for="dob">Дата рождения:</label>
+        <input type="date" id="dob" name="dob" min="1950-01-01" max="2024-12-28" required>
+        <span id="dobError" class="error"></span>
+  
+        <button type="submit">Войти</button>
+      </form>
+    </section>
+  </div>
+  <script src="js/login.js"></script>
+</body>
+</html>
