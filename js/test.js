@@ -68,6 +68,16 @@ document.addEventListener('DOMContentLoaded', function () {
 		})
 })
 
+document.getElementById("checkTestButton").addEventListener("click", function () {
+  const button = this;
+  
+  // Делаем кнопку неактивной
+  button.disabled = true;
+  
+  // Дополнительная логика проверки теста
+  console.log("Кнопка нажата и отключена.");
+});
+
 // Проверка, есть ли данные пользователя в localStorage
 if (!localStorage.getItem('username')) {
     window.location.href = 'index.html';
