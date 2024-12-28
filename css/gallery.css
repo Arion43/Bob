@@ -95,7 +95,7 @@
     border-radius: 20px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     margin: 0 auto;
-    width: 1000px;
+    width: 10px;
   }
 
   #slider-container {
@@ -105,7 +105,7 @@
     flex-direction: column;
     margin: 0 auto;
     row-gap: 30px;
-    height: 100vh;
+    height: 70vh;
 }
 
 #frame {
